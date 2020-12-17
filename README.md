@@ -28,11 +28,11 @@ The goal of graphical lasso is to estimate sparse graph, which is often controll
 A common question is often asked: What is the difference between Graph Laplacian and Precission? The answer is that Laplacian are built on the kernel function and distance, which means that Laplaican considers local manifolds and there is an  positive edge if 2 points are close. However, Precision considers overall structures, which means significantly distant points are also considered in the graph. Say we have 20 points belonging 2 classes, and 10% edges are retained, the graphs are like that,
 
 <div align="center">
-    <img src="/img/laplacian.png"   width="400"/>
-    <img src="/img/precision.png"   width="400"/>
+    <img src="/img/laplacian.png"   width="300"/>
+    <img src="/img/precision.png"   width="300"/>
 </div>
 
-The blue lines in the pictures represent positive edges while the gray ones represent negatives. So if precision is used as regularization terms, it has 2 effects: it will make points between one class close and make points in different class diastant.
+The blue lines in the pictures represent positive edges while the gray ones represent negatives. So if precision is used as regularization terms, it has 2 effects: it will make points between one class close and make points in different class diastant. $$x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$$
 
 
 Edited by [plzhai](https://plzhai.github.io) in 2019/3/24
